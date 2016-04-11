@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import java.util.*
 
 
 /**
@@ -35,8 +37,18 @@ class ArrowFragment : Fragment() {
 
   override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                             savedInstanceState: Bundle?): View? {
+    var view = inflater!!.inflate(R.layout.fragment_arrow, container, false)
+    var imageView : ImageView = view.findViewById(R.id.imageView) as ImageView
+    val value = Random().nextBoolean()
+    if(value) {
+      imageView.setImageResource(R.drawable.la)
+    } else {
+      imageView.setImageResource(R.drawable.ra)
+    }
+
     // Inflate the layout for this fragment
-    return inflater!!.inflate(R.layout.fragment_arrow, container, false)
+    // return inflater!!.inflate(R.layout.fragment_arrow, container, false)
+    return view
   }
 
   // TODO: Rename method, update argument and hook method into UI event

@@ -25,26 +25,9 @@ class MainActivity : FragmentActivity(), ButtonFragment.OnFragmentInteractionLis
       fragmentTransaction!!.add(R.id.contents, fragment)
       fragmentTransaction.commit()
     }
-
-
-//    val button = findViewById(R.id.btn_touch)
-//    button?.setOnClickListener {
-//      Log.v(TAG, "clicked")
-//      // val intent = Intent(applicationContext, javaClass<ArrowActivity>())
-//      // startActivity(ArrowActivity::class)
-//      val fragment = ArrowFragment()
-//      var fragmentTransaction: FragmentTransaction? = getSupportFragmentManager().beginTransaction()
-//      fragmentTransaction!!.replace(R.id.contents, fragment)
-//      fragmentTransaction.addToBackStack(null)
-//      fragmentTransaction.commit()
-//    }
-
-
   }
 
-  override fun onFragmentInteraction(uri : Uri) {
-
-  }
+  override fun onFragmentInteraction(uri : Uri) {}
 
   fun <T: Activity> Activity.startActivity(classRef: KClass<T>, bundle: Bundle? = null, finishFl: Boolean = false) {
     val intent = Intent(this, classRef.java).setAction(Intent.ACTION_VIEW)

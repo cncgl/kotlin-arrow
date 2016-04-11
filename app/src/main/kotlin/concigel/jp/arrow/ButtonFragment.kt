@@ -38,7 +38,7 @@ class ButtonFragment : Fragment() {
                             savedInstanceState: Bundle?): View? {
     var view = inflater!!.inflate(R.layout.fragment_button, container, false)
     view.findViewById(R.id.btn_touch)?.setOnClickListener {
-      Log.v(TAG, "clicked")
+      // Log.v(TAG, "clicked")
       val fragment = ArrowFragment()
       var fragmentTransaction: FragmentTransaction? = getFragmentManager().beginTransaction()
       fragmentTransaction!!.replace(R.id.contents, fragment)

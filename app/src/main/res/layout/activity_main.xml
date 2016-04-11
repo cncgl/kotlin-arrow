@@ -6,7 +6,7 @@
   android:layout_height="match_parent"
   tools:context="concigel.jp.arrow.MainActivity"
   android:clickable="true"
-  android:background="#5858f1">
+  android:background="#6062f4">
 
   <FrameLayout
     android:id="@+id/contents"
@@ -17,5 +17,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_alignParentTop="true"
-    android:background="#445ee3"/>
+    android:background="#6062f4"/>
 </merge>

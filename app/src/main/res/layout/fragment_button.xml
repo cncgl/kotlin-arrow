@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               tools:context="concigel.jp.arrow.ButtonFragment"
               android:gravity="center"
-              android:background="#586fe7">
+              android:background="#6062f4">
 
   <Button
     android:layout_width="wrap_content"

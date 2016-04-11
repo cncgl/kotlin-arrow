@@ -45,6 +45,12 @@ class ArrowFragment : Fragment() {
     } else {
       imageView.setImageResource(R.drawable.ra)
     }
+    val timer = Timer("schedule", true)
+    timer.schedule(object : TimerTask() {
+      override fun run() {
+        fragmentManager.popBackStack()
+      }
+    }, 3000)
 
     // Inflate the layout for this fragment
     // return inflater!!.inflate(R.layout.fragment_arrow, container, false)
